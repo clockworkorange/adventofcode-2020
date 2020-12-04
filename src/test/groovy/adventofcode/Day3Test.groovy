@@ -66,7 +66,7 @@ class Day3Test extends Specification {
         BigDecimal high = exampleInput.count('\n') + 1
         BigDecimal step = 1 * 1
 
-        Integer minimalPatternRepeats = (high/step).setScale(0, RoundingMode.UP) + 1
+        Integer minimalPatternRepeats = (high/step).setScale(0, RoundingMode.UP)
 
         String map = exampleInput.tokenize('\n').collect { String line ->
             line * minimalPatternRepeats + '\n'
@@ -117,7 +117,7 @@ class Day3Test extends Specification {
         BigDecimal high = exampleInput.count('\n') + 1
         BigDecimal step = 1 * 1
 
-        Integer minimalPatternRepeats = (high/step).setScale(0, RoundingMode.UP) + 1
+        Integer minimalPatternRepeats = (high/step).setScale(0, RoundingMode.UP)
 
         String map = ''
         exampleInput.tokenize('\n').eachWithIndex { String line, int index ->
